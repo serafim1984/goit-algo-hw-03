@@ -9,6 +9,7 @@ def koch_curve(t, order, size):
             t.left(angle)
 
 def draw_koch_curve(order, size=300):
+   
     window = turtle.Screen()
     window.bgcolor("white")
 
@@ -25,5 +26,11 @@ def draw_koch_curve(order, size=300):
 
     window.mainloop()
 
-# Виклик функції
-draw_koch_curve(3)
+def main():
+
+    order = int(input('Pleae input order of Koch curve you want to draw '))
+
+    draw_koch_curve(order)
+
+if __name__ == '__main__':
+    main()
